@@ -75,8 +75,7 @@ margin-left: 3% !important;
          /*main-area*/
          .main{display: row;
         margin-top: -10%;}
-        .sub{width: 50% !important;
-        margin-left: 25%;}
+        .sub{}
      .p{font-size: 1.5rem;
         font-family: Lobster Two;
         font-weight: 700;}
@@ -149,3 +148,16 @@ margin-top: -7%;}
 .btn{
     background-color: rgba(1, 48, 48, 0.651) !important;
 }
+
+
+.note-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.note-list span{
+    display: flex;
+    flex-direction: row;
+}
+
