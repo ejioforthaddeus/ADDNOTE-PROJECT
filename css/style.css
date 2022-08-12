@@ -1,0 +1,151 @@
+@import url(../css/fonts/flaticon/font/Flaticon.ttf);
+@import url(/css/fonts/icomoon/fonts/icomoon1a44.eot);
+.header-area{position: fixed;
+width: 100%;
+z-index: 100000;
+}
+     /*  navbar area    */
+
+
+.navbar{ 
+    position: fixed;
+    width: 100%;
+    top: -1px;
+     background: linear-gradient(90deg,rgb(245, 246, 247) 0%, rgba(2, 38, 104, 0.897) 100%);
+    box-shadow: 0px 10px 30px rgb(241, 159, 6);
+    border: 2px solid rgb(152, 250, 5) ;
+
+}
+.navbar-nav{margin-left: 40%;}
+.nav-link{color: rgb(204, 203, 202) !important;
+z-index: 1000; 
+background-color: rgb(214, 6, 6);
+transform: rotate(10deg);}
+.nav-link:hover{
+    color: rgb(253, 187, 6) !important;
+}
+.nav-link{
+    animation-duration: 29s;
+    animation-name:nav-link;
+    border-radius: 5%;
+  }
+  
+  @keyframes  nav-link{
+    5%    {background-color: black;}
+    10%   {background-color: rgb(174, 177, 6);}
+    15%   {background-color: #053742;}
+    20%   {background-color: rgb(243, 178, 12);}
+    25%  {background-color: rgb(88, 7, 68);}
+    30%   {background-color: darkred;}
+    40%   {background-color: darksalmon;}
+    50%  {background-color: blue;}
+    60%   {background-color: #c906e2;}
+    100% {background-color: green;}
+  }
+.sub{margin-top: 30%;}
+@media(max-width:991px){
+    .nav-link{transform: rotate(0deg);}
+    .nav-link:hover{
+        color: rgb(4, 116, 9) !important;
+        background: rgb(34, 1, 65); }
+
+        .form-control{width: 100% !important;}
+        .btn{margin-left: 5%;
+            background-color: rgba(6, 247, 247, 0.603) !important;
+        margin-top: 10%;}
+        .text-btn{margin-left: 20%;}
+.navbar-nav{border-radius: 4%;}
+.footer{width: 100vw;
+    color: rgb(26, 25, 25); 
+margin-top: 35% !important;
+margin-left: 3% !important;
+}
+
+.input-group-append2{display: flex;
+    margin-left: -7% !important;
+    margin-top: -7%;}
+.social {width: 100%;
+    padding: 2% 4rem !important;
+    margin-left: -65%;
+}
+
+}
+/*  end navbar area    */
+
+         /*main-area*/
+         .main{display: row;
+        margin-top: -10%;}
+        .sub{width: 50% !important;
+        margin-left: 25%;}
+     .p{font-size: 1.5rem;
+        font-family: Lobster Two;
+        font-weight: 700;}
+    
+.type{margin-top: -5%;
+margin-left: 130%;}
+         /*end main-area*/
+                  /*footer*/
+
+                  .footer{
+                    width: 100vw;
+                    color: rgb(26, 25, 25); 
+                margin-top: -5% !important;
+                margin-left: -5% !important;
+            display: inline;
+        }
+        .bi2{margin-left: 20% !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 2rem 3rem ;
+            position: sticky;
+      
+}
+
+                  /*end-footer*/
+                  .social {width: 50%;
+                margin-left: 18%;
+                margin-top: -2%;
+            }
+            .social a:hover{
+                background-color: rgb(3, 135, 250);
+                border-radius: 100%;
+            }
+            html,body{background-image: url(../images//pexels-emiliano-arano-1350197.jpg);
+            background-repeat: no-repeat;
+        background-position: center;
+    background-size: cover; 
+width: 100% !important; 
+z-index: 1000000;
+height: 100vh;
+overflow-x: hidden;}
+.bi-list-ul{font-size: 200%;}
+.footer-area{
+    background: linear-gradient(90deg,rgb(13, 134, 2) 0%, rgb(253, 157, 62) 100%);
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+}
+a{
+    text-decoration: none !important;
+    font-weight: 300;
+}
+.footer-heading{margin-top: -20%;
+background: #000;
+text-align: center;
+text-transform: uppercase;
+background-size: cover;}
+
+.footer-heading2{margin-top: -20%;
+    background: #000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+background-size: cover;}
+.input-group-append2{display: flex;
+margin-left: 60%;
+margin-top: -7%;}
+.input-group-append{display: flex;}
+.btn{
+    background-color: rgba(1, 48, 48, 0.651) !important;
+}
