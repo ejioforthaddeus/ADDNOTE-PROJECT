@@ -2,6 +2,7 @@
 let body = document.getElementById("body");
 let title = document.getElementById("title");
 let save = document.getElementById("savebtn");
+let note_id;
 
 
 save.addEventListener("click", () => {
@@ -40,6 +41,10 @@ async function deleteNote(id) {
 async function viewNote(id) {
     let view_title = document.querySelector(".view-title");
     let view_body = document.querySelector(".view-body");
+    note_id = id;
+
+    let view_title_edit = document.querySelector(".view-title-edit");
+    let view_body_edit = document.querySelector(".view-body-edit");
 
     let saved_notes = JSON.parse(localStorage.getItem("notes" || "[]"));
 
@@ -49,4 +54,25 @@ async function viewNote(id) {
 
     view_title.innerHTML = currentNote[0].title;
     view_body.innerHTML = currentNote[0].body;
+
+    view_title_edit.value = currentNote[0].title;
+    view_body_edit.value = currentNote[0].body;
+}
+
+    async function update(){
+
+        let view_title_edit = document.querySelector(".view-title-edit").value;
+        let view_body_edit = document.querySelector(".view-body-edit").value;
+
+        let saved_notes = JSON.parse(localStorage.getItem("notes") || "[]");
+        let newnote = {};
+        newnote.title = view_title_edit
+        newnote.body = view_body_edit
+
+        newnote.date = new Date().getTime();
+
+        saved_notes[note_id] = newnote;
+
+        localStorage.setItem("notes", JSON.stringify(saved_notes));
+        window.location.href = window.location.href;
 }
